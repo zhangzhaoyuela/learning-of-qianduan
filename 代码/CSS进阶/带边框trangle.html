@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+       #triangle{
+           position:relative;
+           width:0;
+           height:0;
+           border-width:30px;
+           border-style:solid;
+           border-color:transparent transparent black transparent;
+       } 
+       #triangle div{
+           position:absolute;
+           top:0px;
+           left:0px;
+           width:0;
+           height:0;
+           border-width:29px;
+           border-style:solid;
+           border-color:transparent transparent #BBFFEE transparent;
+       }
     </style>
 </head>
 <body>
-    <div></div>
+    <div id="triangle">
+        <div></div>
+    </div>
 </body>
 </html>
