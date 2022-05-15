@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- 在单选按钮的基础上： box-shadow会按比例缩放，如果将第一个值设置为白色，第二个值设置的比第一个值大一点，就会出现“射击靶子”的效果。 -->
+   <style>
+       div{
+           width:14px;
+           height:14px;
+           background-color:hotpink;
+           border-radius: 16px;
+           box-shadow:  0 0 0 3px white, 0 0 0 5px goldenrod;
+           outline:19px solid white;
+           outline-offset:-25px;
+           transform:scale(1.5);
+           margin: 30px auto;
+       }
+   </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

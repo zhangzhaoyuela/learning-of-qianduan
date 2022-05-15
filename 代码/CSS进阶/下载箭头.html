@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- box-shadow属性值含义：
+    1.offset-x 第一个长度值指明了阴影水平方向的偏移,即阴影在 x 轴的位置。值为正数时,阴影在元素的右侧;值为负数时,阴影在元素的左侧。
+    2.offset-y 第二个长度值指明了阴影竖直方向的偏移,即阴影在 y 轴的位置。值为正数时,阴影在元素的下方;值为负数时,阴影在元素的上方。
+    3.blur 第三个长度值代表了阴影的模糊半径,举例来说,就是你在设计软件中使用 高斯模糊 滤波器带来的效果。
+      值为 0 意味着该阴影是固态而锋利的,完全完全没有模糊效果。blur 值越大,阴影则更不锋利而更朦胧 / 模糊。负值是不合法的，会被修正成 0
+    4.spread第四个长度代表了阴影扩展半径,其值可以是正负值,如果值为正,则整个阴影都延展扩大,反之值为负值是,则缩小。 -->
+    
+    <style>
+        div{
+     /* 使用border制作三角形，使用box-shadow制作正方形 */
+        width:0;
+        color:hotpink;
+        border:16px solid transparent;
+        border-top:16px solid;
+        box-shadow:0 -24px 0 -8px;
+        margin:50px auto;
+    } 
+    </style>
+   
+</head>
+<body>
+    <div></div>
+</body>
+</html>
