@@ -17,7 +17,7 @@
     <script type ="text/html" id="tpl-user">
         <h1>{{name}}   ----   {{age}}</h1>
         {{@test}}
-
+        <!-- <h3>{{regTime|dateFormate}}</h3> -->
         <div>
             {{if(flag===0)}}
             flag 是 0
@@ -32,7 +32,14 @@
             {{/each}}
         </ul>
     </script>
+
     <script>
+        // template.defaults.imports.dataFormat = function(data){
+        //     var y = date.getFullYear();
+        //     var m =date.getMonth()+1;
+        //     var d = date.Date();
+        //     return y+'-'+m+'-'+d;
+        // }
         // 2.定义渲染的数据
          var data = {name:'zs',age :20,test:'<h3>test</h3>',flag:1,hobby:['chifan','shuijiao']}
 
