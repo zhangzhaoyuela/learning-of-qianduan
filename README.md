@@ -8,4 +8,8 @@ git config --global http.sslVerify "false"
 ipconfig /flushdns
 
 超时问题：取消全局代理  
+需要先设置全局代理，再取消
+git config --global http.proxy http://127.0.0.1:1080
+git config --global https.proxy http://127.0.0.1:1080
+git config --global --unset http.proxy
 git config --global --unset https.proxy
